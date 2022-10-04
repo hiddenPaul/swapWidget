@@ -204,18 +204,6 @@ export default function StableSwapForm({ setIsChartDisplayed, isChartDisplayed }
   return (
     <>
       <CurrencyInputHeader
-        title={
-          <Flex>
-            {t('StableSwap')}
-            <InfoTooltip
-              ml="4px"
-              text={t('StableSwap provides better rates and lower fees for pairs with highly correlated prices')}
-            />
-          </Flex>
-        }
-        subtitle={t('Trade tokens in an instant')}
-        setIsChartDisplayed={setIsChartDisplayed}
-        isChartDisplayed={isChartDisplayed}
         hasAmount={hasAmount}
         onRefreshPrice={onRefreshPrice}
       />

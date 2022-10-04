@@ -59,13 +59,7 @@ const SwitchIconButton = styled(IconButton)`
   }
 `
 
-interface SwapForm {
-  isChartExpanded: boolean
-  isChartDisplayed: boolean
-  setIsChartDisplayed: Dispatch<SetStateAction<boolean>>
-}
-
-export default function SwapForm({ setIsChartDisplayed, isChartDisplayed, isAccessTokenSupported }) {
+export default function SwapForm({ isAccessTokenSupported }) {
   const { t } = useTranslation()
   const { refreshBlockNumber, isLoading } = useRefreshBlockNumberID()
   const warningSwapHandler = useWarningImport()
@@ -217,10 +211,6 @@ export default function SwapForm({ setIsChartDisplayed, isChartDisplayed, isAcce
     <>
       <>
         <CurrencyInputHeader
-          title={t('Swap')}
-          subtitle={t('Trade tokens in an instant')}
-          setIsChartDisplayed={setIsChartDisplayed}
-          isChartDisplayed={isChartDisplayed}
           hasAmount={hasAmount}
           onRefreshPrice={onRefreshPrice}
         />

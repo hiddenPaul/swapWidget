@@ -350,12 +350,6 @@ const LimitOrders = () => {
           <StyledSwapContainer $isChartExpanded={false}>
             <StyledInputCurrencyWrapper>
               <AppBody>
-                <CurrencyInputHeader
-                  title={t('Limit')}
-                  subtitle={t('Place a limit order to trade at a set price')}
-                  setIsChartDisplayed={setIsChartDisplayed}
-                  isChartDisplayed={isChartDisplayed}
-                />
                 <Wrapper id="limit-order-page" style={{ minHeight: '412px' }}>
                   <AutoColumn gap="sm">
                     <CurrencyInputPanel
