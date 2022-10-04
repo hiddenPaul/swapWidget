@@ -82,16 +82,6 @@ const config = {
   },
   async redirects() {
     return [
-      {
-        source: '/send',
-        destination: '/swap',
-        permanent: true,
-      },
-      {
-        source: '/swap/:outputCurrency',
-        destination: '/swap?outputCurrency=:outputCurrency',
-        permanent: true,
-      },
     ]
   },
   webpack: (webpackConfig, { webpack }) => {

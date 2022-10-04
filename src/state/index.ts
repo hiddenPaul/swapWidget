@@ -108,6 +108,6 @@ export const persistor = persistStore(store, undefined, () => {
   store.dispatch(updateVersion())
 })
 
-export function useStore(initialState) {
+export function useStore(initialState = undefined) {
   return useMemo(() => initializeStore(initialState), [initialState])
 }
