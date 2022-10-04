@@ -47,18 +47,6 @@ const config = {
   },
   async rewrites() {
     return [
-      {
-        source: '/info/token/:address',
-        destination: '/info/tokens/:address',
-      },
-      {
-        source: '/info/pool/:address',
-        destination: '/info/pools/:address',
-      },
-      {
-        source: '/info/pair/:address',
-        destination: '/info/pools/:address',
-      },
     ]
   },
   async headers() {
@@ -102,36 +90,6 @@ const config = {
       {
         source: '/swap/:outputCurrency',
         destination: '/swap?outputCurrency=:outputCurrency',
-        permanent: true,
-      },
-      {
-        source: '/create/:currency*',
-        destination: '/add/:currency*',
-        permanent: true,
-      },
-      {
-        source: '/farms/archived',
-        destination: '/farms/history',
-        permanent: true,
-      },
-      {
-        source: '/pool',
-        destination: '/liquidity',
-        permanent: true,
-      },
-      {
-        source: '/staking',
-        destination: '/pools',
-        permanent: true,
-      },
-      {
-        source: '/syrup',
-        destination: '/pools',
-        permanent: true,
-      },
-      {
-        source: '/collectibles',
-        destination: '/nfts',
         permanent: true,
       },
     ]
