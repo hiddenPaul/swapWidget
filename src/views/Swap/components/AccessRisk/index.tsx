@@ -108,10 +108,6 @@ const AccessRisk: React.FC<AccessRiskProps> = ({ inputCurrency, outputCurrency }
         <Button scale="xs" style={{ textTransform: 'uppercase' }} disabled={disabledButton} onClick={handleScan}>
           {loading ? t('scanning...') : t('scan risk')}
         </Button>
-        {tooltipVisible && tooltip}
-        <Flex ref={targetRef}>
-          <HelpIcon ml="4px" width="20px" height="20px" color="textSubtle" />
-        </Flex>
       </Flex>
       {results[inputChainId]?.[inputAddress]?.isSuccess && (
         <RiskMessage currency={inputCurrency} riskTokenInfo={results[inputChainId][inputAddress]} />

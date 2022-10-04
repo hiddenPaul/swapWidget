@@ -15,7 +15,6 @@ import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useTranslation } from '@pancakeswap/localization'
 import useTheme from 'hooks/useTheme'
-import QuestionHelper from '../../QuestionHelper'
 import TransactionSettings from './TransactionSettings'
 import ExpertModal from './ExpertModal'
 import GasSettings from './GasSettings'
@@ -106,13 +105,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Subgraph Health Indicator')}</Text>
-                  <QuestionHelper
-                    text={t(
-                      'Turn on NFT market subgraph health indicator all the time. Default is to show the indicator only when the network is delayed',
-                    )}
-                    placement="top-start"
-                    ml="4px"
-                  />
                 </Flex>
                 <Toggle
                   id="toggle-subgraph-health-button"
@@ -142,24 +134,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Zap (Beta)')}</Text>
-                  <QuestionHelper
-                    text={
-                      <Box>
-                        <Text>
-                          {t(
-                            'Zap enables simple liquidity provision. Add liquidity with one token and one click, without manual swapping or token balancing.',
-                          )}
-                        </Text>
-                        <Text>
-                          {t(
-                            'If you experience any issue when adding or removing liquidity, please disable Zap and retry.',
-                          )}
-                        </Text>
-                      </Box>
-                    }
-                    placement="top-start"
-                    ml="4px"
-                  />
                 </Flex>
                 <Toggle
                   checked={zapMode}
@@ -173,11 +147,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
             <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
                 <Text>{t('Expert Mode')}</Text>
-                <QuestionHelper
-                  text={t('Bypasses confirmation modals and allows high slippage trades. Use at your own risk.')}
-                  placement="top-start"
-                  ml="4px"
-                />
               </Flex>
               <Toggle
                 id="toggle-expert-mode-button"
@@ -189,7 +158,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
             <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
                 <Text>{t('Disable Multihops')}</Text>
-                <QuestionHelper text={t('Restricts swaps to direct pairs only.')} placement="top-start" ml="4px" />
               </Flex>
               <Toggle
                 id="toggle-disable-multihop-button"
@@ -203,11 +171,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
             <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
                 <Text>{t('Flippy sounds')}</Text>
-                <QuestionHelper
-                  text={t('Fun sounds to make a truly immersive pancake-flipping trading experience')}
-                  placement="top-start"
-                  ml="4px"
-                />
               </Flex>
               <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} scale="md" />
             </Flex>

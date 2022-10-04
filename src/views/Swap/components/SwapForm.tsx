@@ -337,6 +337,9 @@ export default function SwapForm({ isAccessTokenSupported }) {
               allowedSlippage={allowedSlippage}
               onUserInput={onUserInput}
             />
+            <Text color="primary">
+              Powered by PancakeSwap
+            </Text>
           </Box>
         </Wrapper>
         {!swapIsUnsupported ? (
