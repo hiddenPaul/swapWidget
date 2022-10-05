@@ -1,0 +1,21 @@
+{
+  "dbzTokenAddress": "0xcf7467f96b6bd48131fd16e4c041b09975e692d3",
+  "flsTokenAddress": "0x327a21D114393Df8d46285674929C064E4ff13f0",
+  "rpcURL": "https://bsc-dataseed.binance.org/",
+  "chainId": "0x38",
+  "chainName": "BNB Smart Chain Mainnet",
+  "deepLink": "https://metamask.app.link/dapp/flawlessgate.on.fleek.co/",
+  "pancakeSwapAddress": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+  "FLSTokenInfo": {
+    "symbol": "FLS",
+    "decimals": 18,
+    "address": "0x327a21D114393Df8d46285674929C064E4ff13f0",
+    "image": ""
+  },
+  "DBZTokenInfo": {
+    "symbol": "DBZ",
+    "decimals": 18,
+    "address": "0xcf7467f96b6bd48131fd16e4c041b09975e692d3",
+    "image": ""
+  }
+}

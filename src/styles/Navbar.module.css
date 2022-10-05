@@ -1,0 +1,21 @@
+.navbar {
+    align-items: center;
+    /* height: 10vh; */
+    max-height: 10vh;
+}
+
+
+.navbarLink {
+    color: #fff;
+    text-decoration: none;
+    /* padding-left: 20px; */
+}
+
+.logo {
+    padding-right: 10px;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../public/fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
+}

@@ -1,0 +1,1 @@
+ganache --fork https://bsc-mainnet.nodereal.io/v1/31ae779782ec4f7f9e22ec3385d54b3a --account_keys_path keys.json -b 1

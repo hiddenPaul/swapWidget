@@ -25,18 +25,10 @@ export default function Swap() {
   const isAccessTokenSupported = useMemo(() => ACCESS_TOKEN_SUPPORT_CHAIN_IDS.includes(chainId), [chainId])
 
   return (
-    <Flex width="100%" justifyContent="center" position="relative">
-      <Flex flexDirection="column">
-        <StyledSwapContainer $isChartExpanded={false}>
-          <StyledInputCurrencyWrapper mt='0'>
-            <AppBody>
-              <SwapForm
-                isAccessTokenSupported={isAccessTokenSupported}
-              />
-            </AppBody>
-          </StyledInputCurrencyWrapper>
-        </StyledSwapContainer>
-      </Flex>
-    </Flex>
+    <AppBody>
+      <SwapForm
+        isAccessTokenSupported={isAccessTokenSupported}
+      />
+    </AppBody>
   )
 }

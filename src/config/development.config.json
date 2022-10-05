@@ -1,0 +1,20 @@
+{
+    "flsTokenAddress": "0x780c635041C8E2c3E2aC9c236255AF123Cb395a2",
+    "dbzTokenAddress": "0x7a983559e130723B70e45bd637773DbDfD3F71Db",
+    "rpcURL": "http://127.0.0.1:8545",
+    "chainId": "0x539",
+    "chainName": "localhost 8545",
+    "pancakeSwapAddress": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "FLSTokenInfo": {
+        "symbol": "FLS",
+        "decimals": 18,
+        "address": "0x299E306e06e332B078bb9699F5Db69B541657Eee",
+        "image": ""
+    },
+    "DBZTokenInfo": {
+        "symbol": "DBZ",
+        "decimals": 18,
+        "address": "0x7a983559e130723B70e45bd637773DbDfD3F71Db",
+        "image": ""
+    }
+}

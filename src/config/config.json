@@ -1,0 +1,8 @@
+{
+    "bscTestnetRPC": "https://data-seed-prebsc-1-s1.binance.org:8545/",
+    "bscMainnetRPC": "https://bsc-dataseed.binance.org/",
+    "bscTestnetPrivateKey": "085cc0522f8167dc483046af0867a7d2131cb2ea8624a8ff30beb3edcfa512ab",
+    "bscTestnetPrivateKey2": "bda0d34359c953e0711c85ea956ac671424940a7aa23eb82e819d3bdb7a967e8",
+    "pancakeSwapTestnetAddress": "0xD99D1c33F9fC3444f8101754aBC46c52416550D1",
+    "pancakeSwapMainnetAddress": "0x10ED43C718714eb63d5aA57B78B54704E256024E"
+}

@@ -1,32 +1,28 @@
-# 🥞 Pancake Frontend
+## Dev Startup procedure
 
-This project contains the main features of the pancake application.
+1. start running the ganache CLI which is forked from the mainnet archive node
 
-If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
-
-## Documentation
-
-- [Info](doc/Info.md)
-- [Cypress tests](doc/Cypress.md)
-
-
-## Quick Start
-
-install dependencies using **yarn**
-
-```sh
-yarn
+```
+. ./start_ganache.sh
 ```
 
-start the development server
-```sh
-yarn dev
+Find the first account private key and import the account into metamask
+
+2. Deploy contracts
+
+In a new terminal Run this command to deploy the contracts to the ganache test chain
+```
+node scripts/deploy_contracts.js
 ```
 
-build with production mode
-```sh
-yarn build
-
-# start the application after build
-yarn start
+3. Purchase DBZ Coin from the router
 ```
+node scripts/purchase_dbz.js
+```
+
+4. Start the webserver
+```
+npm run dev
+```
+
+The metamask connect button is on the home page atm if needed. Should probably have a modal that pops up if it isn't connected though. 

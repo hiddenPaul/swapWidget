@@ -1,0 +1,53 @@
+.claim {
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+}
+
+.input {
+  border: 1px;
+}
+
+.boxContainer {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.stack {
+  justify-content: center;
+  text-align: center;
+  /* box-shadow: 3px 3px 3px 3px #888888; */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.stackItem {
+  margin: 2rem;
+  margin-bottom: 2rem !important;
+  justify-content: center;
+}
+
+.tokenDisplay {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1rem;
+  /* margin: 2; */
+  justify-content: center;
+}
+
+.innerStack {
+  justify-content: center;
+  text-align: center;
+  /* box-shadow: 3px 3px 3px 3px #888888; */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}

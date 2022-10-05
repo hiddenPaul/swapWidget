@@ -1,0 +1,7 @@
+{
+  "dbzTokenAddress": "0xdfC676C8597590BCc51c1D3FADE9a6214F0b65e1",
+  "flsTokenAddress": "0x64b76721243416d7cbE082b00fdf1080eB9139F0",
+  "rpcURL": "https://data-seed-prebsc-1-s1.binance.org:8545/",
+  "chainID": "0x61",
+  "pancakeSwapAddress": "0xD99D1c33F9fC3444f8101754aBC46c52416550D1"
+}
