@@ -4,6 +4,7 @@ import { Flex, useMatchBreakpoints } from '@pancakeswap/uikit'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useDefaultsFromURLSearch } from 'state/limitOrders/hooks'
 import { AppBody } from 'components/App'
+import { Typography, Paper, Grid, alpha, Container, ToggleButtonGroup, ToggleButton } from '@mui/material'
 
 import { useExchangeChartManager } from '../../state/user/hooks'
 import Page from '../Page'
@@ -25,10 +26,10 @@ export default function Swap() {
   const isAccessTokenSupported = useMemo(() => ACCESS_TOKEN_SUPPORT_CHAIN_IDS.includes(chainId), [chainId])
 
   return (
-    <AppBody>
+    <Paper elevation={3} sx={{bgcolor:"#002A3C"}}>
       <SwapForm
         isAccessTokenSupported={isAccessTokenSupported}
       />
-    </AppBody>
+    </Paper>
   )
 }

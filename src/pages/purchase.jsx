@@ -4,7 +4,7 @@ import SwapWidget from '../components/SwapWidget';
 import { Typography, Paper, Grid, alpha, Container, ToggleButtonGroup, ToggleButton } from '@mui/material'
 
 export default function FiatGateway() {
-    const [widgetState, setWidget] = React.useState('swap');
+    const [widgetState, setWidget] = React.useState('buy');
   
     const changeWidget = (event, newWidgetState) => {
       if (newWidgetState !== null) {
